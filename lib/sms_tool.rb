@@ -6,7 +6,7 @@ module SmsTool
 
   def self.send_sms(number:, message:)
   	@client.messages.create(
-  		from: ENV['+13852360127'],
+  		from: ENV['TWILIO_PHONE_NUMBER'],
   		to: "+1#{number}",
   		body: "#{message}"
   		)
