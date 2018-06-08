@@ -1,6 +1,6 @@
 module SmsTool
-	account_sid = ENV['AC50daa8ebe37f16a97321ee22ecfac50e']
-	auth_token = ENV['842f98b92745e0c5c6caa3f4fd54c54f']
+	account_sid = ENV['TWILIO_ACCOUNT_SID']
+	auth_token = ENV['TWILIO_AUTH_TOKEN']
 
 	@client = Twilio::REST::Client.new account_sid, auth_token
 
